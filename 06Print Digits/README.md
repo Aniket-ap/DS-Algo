@@ -1,0 +1,23 @@
+# Print Digits
+
+## Problem Statement
+Given a natural number N, your task is to print all the digits of the number in words. The words have to separated by space and in lowercase english letters.
+
+## Input
+
+User Task:
+
+Since this will be a functional problem, you don't have to take input. You just have to complete the function Print_Digit() that takes integer N as a parameter.
+
+## Output
+
+Print the digits of the number as shown in the example.
+
+Note:- Print all digits in lowercase English letters
+
+## Example
+Sample Input:-
+1024
+
+Sample Output:-
+one zero two four
