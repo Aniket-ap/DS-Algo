@@ -1,0 +1,1 @@
+# MAX and MIN of an array
