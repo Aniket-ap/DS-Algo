@@ -9,6 +9,8 @@ public class ArrayBasic {
         delete(arr, key);
         int max = largestElement(arr);
         System.out.println(max);
+        int secondLarge = secondLargest(arr);
+		System.out.println(arr[secondLarge]);
 
         for (int e : arr) {
             System.out.println(e + " ");
@@ -64,4 +66,25 @@ public class ArrayBasic {
         return max;
     }
 
+    // Second largest Element in an array
+    static int secondLargest(int[] a) {
+        if (a.length < 2)
+            return -1;
+
+        int largest = 0;
+        int secondLargest = -1;
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > a[largest]) {
+                secondLargest = largest;
+                largest = i;
+            } else if (a[i] < a[largest]) {
+                if (secondLargest == -1 || a[i] > a[secondLargest]) {
+                    secondLargest = i;
+                }
+            }
+        }
+
+        return secondLargest;
+    }
 }
