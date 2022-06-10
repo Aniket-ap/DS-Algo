@@ -7,6 +7,8 @@ public class ArrayBasic {
 
         searchArr(arr, key);
         delete(arr, key);
+        int max = largestElement(arr);
+        System.out.println(max);
 
         for (int e : arr) {
             System.out.println(e + " ");
@@ -48,4 +50,18 @@ public class ArrayBasic {
         }
         return n - 1;
     }
+
+    // Largest Element
+    static int largestElement(int[] a) {
+        int i = 0;
+        int max = -1;
+
+        for (; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i];
+            }
+        }
+        return max;
+    }
+
 }
