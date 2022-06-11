@@ -126,6 +126,19 @@ public class ArrayBasic {
 
     // reverse the given array
 
+    static void reverse(int a[], int n) {
+        int[] b = new int[n];
+        int j = n;
+        for (int i = 0; i < n; i++) {
+            b[j - 1] = a[i];
+            j = j - 1;
+        }
+
+        for (int k = 0; k < n; k++) {
+            System.out.print(b[k] + " ");
+        }
+    }
+
     // replace every element with the gretest element on its right side
     // 7 5 8 9 6 8 5 7 4 6
     // 9 9 9 8 8 7 7 6 6 0
