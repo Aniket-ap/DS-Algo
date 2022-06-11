@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayBasic {
     public static void main(String[] args) {
 
@@ -11,7 +13,7 @@ public class ArrayBasic {
         System.out.println(max);
         int secondLarge = secondLargest(arr);
 		System.out.println(arr[secondLarge]);
-
+        
         for (int e : arr) {
             System.out.println(e + " ");
         }
@@ -87,4 +89,24 @@ public class ArrayBasic {
 
         return secondLargest;
     }
+
+    // Remove duplicate from a sorted array
+
+
+    // Smalest element in given array
+
+
+    // Third largest element in an array
+
+
+    // check if the array is sorted
+
+
+    // reverse the given array
+
+
+    // replace every element with the gretest element on its right side
+    // 7 5 8 9 6 8 5 7 4 6
+    // 9 9 9 8 8 7 7 6 6 0
+
 }
