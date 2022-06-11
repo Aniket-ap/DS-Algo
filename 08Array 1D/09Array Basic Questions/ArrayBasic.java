@@ -7,13 +7,15 @@ public class ArrayBasic {
         int[] arr = { 1, 4, 2, 6, 8 };
         int key = 8;
 
-        searchArr(arr, key);
-        delete(arr, key);
-        int max = largestElement(arr);
-        System.out.println(max);
-        int secondLarge = secondLargest(arr);
-		System.out.println(arr[secondLarge]);
-        
+        // searchArr(arr, key);
+        // delete(arr, key);
+        // int max = largestElement(arr);
+        // System.out.println(max);
+        // int secondLarge = secondLargest(arr);
+        // System.out.println(arr[secondLarge]);
+        // int small = findSmallest(arr);
+        // System.out.println(small);
+
         for (int e : arr) {
             System.out.println(e + " ");
         }
@@ -92,18 +94,25 @@ public class ArrayBasic {
 
     // Remove duplicate from a sorted array
 
-
     // Smalest element in given array
 
+    public static int findSmallest(int a[]) {
+        int small = Integer.MAX_VALUE;
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < small) {
+                small = a[i];
+            }
+        }
+
+        return small;
+    }
 
     // Third largest element in an array
 
-
     // check if the array is sorted
 
-
     // reverse the given array
-
 
     // replace every element with the gretest element on its right side
     // 7 5 8 9 6 8 5 7 4 6
