@@ -111,6 +111,18 @@ public class ArrayBasic {
     // Third largest element in an array
 
     // check if the array is sorted
+    public static boolean arrIsSorted(int a[]) {
+        boolean isSorted = true;
+
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] >= a[i + 1]) {
+                isSorted = false;
+                break;
+            }
+        }
+
+        return isSorted;
+    }
 
     // reverse the given array
 
