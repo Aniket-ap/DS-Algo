@@ -95,7 +95,6 @@ public class ArrayBasic {
     // Remove duplicate from a sorted array
 
     // Smalest element in given array
-
     public static int findSmallest(int a[]) {
         int small = Integer.MAX_VALUE;
 
@@ -125,7 +124,6 @@ public class ArrayBasic {
     }
 
     // reverse the given array
-
     static void reverse(int a[], int n) {
         int[] b = new int[n];
         int j = n;
