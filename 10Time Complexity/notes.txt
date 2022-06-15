@@ -1,0 +1,18 @@
+=============BigO Notation===========
+// find out biggest degree and remove constant
+f(n) = an2 + bn =======>n2;
+f(n) = nlogn + bn =======>nlogn;
+f(n) = 1000; =========n0====>1;
+
+// NlogN bigger then N;
+
+O(1);
+O(log n);
+O(n);
+O(n log n);
+O(n^2);
+O(n^3);
+O(n^4);
+O(2^n);
+O(n!);
+
